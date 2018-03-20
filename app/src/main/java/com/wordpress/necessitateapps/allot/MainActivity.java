@@ -1,9 +1,22 @@
 package com.wordpress.necessitateapps.allot;
 
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
+
+
+
+import android.support.v7.widget.OrientationHelper;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
+
+import java.util.Calendar;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.TreeSet;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity{
 
@@ -11,6 +24,12 @@ public class MainActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ButterKnife.bind(this);
+
+        Calendar calendar = Calendar.getInstance();
+        Set<Long> days = new TreeSet<>();
+        days.add(calendar.getTimeInMillis());
+
 
     }
 
