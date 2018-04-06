@@ -34,7 +34,8 @@ public class LoginActivity extends AppCompatActivity {
 
     @OnClick(R.id.button_login)
     public void login(View view) {
-        String email = editEmail.getText().toString();
+        String email;
+        email = editEmail.getText().toString();
         String pass = editPass.getText().toString();
 
         message(email, pass);
@@ -64,6 +65,5 @@ public class LoginActivity extends AppCompatActivity {
 
     private void message(String email, String pass){
         Snackbar.make(findViewById(R.id.login_frame), email+" "+pass, Snackbar.LENGTH_SHORT).show();
-
     }
 }
