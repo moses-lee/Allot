@@ -9,9 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-/**
- * Created by spotzdevelopment on 4/5/2018.
- */
+
 
 public class CalendarFragment extends Fragment {
     // This event fires 1st, before creation of fragment or any views
