@@ -9,4 +9,6 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="skip">Skip</string>
+    <string name="reminder_subject">Reminder\nSubject</string>
+    <string name="when">When</string>
 </resources>

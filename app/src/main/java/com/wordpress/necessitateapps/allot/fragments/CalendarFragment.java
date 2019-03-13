@@ -1,4 +1,4 @@
-package com.wordpress.necessitateapps.allot;
+package com.wordpress.necessitateapps.allot.fragments;
 
 import android.app.Activity;
 
@@ -9,6 +9,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.wordpress.necessitateapps.allot.MainActivity;
+import com.wordpress.necessitateapps.allot.R;
 
 
 public class CalendarFragment extends Fragment {
@@ -22,6 +24,18 @@ public class CalendarFragment extends Fragment {
         if (context instanceof Activity){
             this.listener = (MainActivity) context;
         }
+    }
+
+    public CalendarFragment() {
+        // Required empty public constructor
+    }
+    public static CalendarFragment newInstance() {
+        CalendarFragment fragment = new CalendarFragment();
+
+//        Bundle args = new Bundle();
+//        args.putString(TEXT, text);
+//        fragment.setArguments(args);
+        return fragment;
     }
 
     // This event fires 2nd, before views are created for the fragment

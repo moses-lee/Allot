@@ -34,6 +34,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
+        android:layout_marginBottom="48dp"
         android:layout_marginTop="248dp"
         app:cardElevation="22dp">
 
@@ -48,7 +49,6 @@
                 android:id="@+id/input1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:textColorHint="@color/textColorLight"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -66,7 +66,6 @@
                     android:inputType="textEmailAddress"
                     android:maxLength="50"
                     android:paddingBottom="10dp"
-                    android:textColor="@color/textColor"
                     android:textSize="18sp"
                     />
 
@@ -77,7 +76,6 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:hint="@string/password"
-                android:textColorHint="@color/textColorLight"
                 app:layout_constraintTop_toBottomOf="@id/input1"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -95,7 +93,6 @@
                     android:inputType="textPassword"
                     android:maxLength="50"
                     android:paddingBottom="10dp"
-                    android:textColor="@color/textColor"
                     android:textSize="18sp" />
 
             </android.support.design.widget.TextInputLayout>
